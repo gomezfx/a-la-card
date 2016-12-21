@@ -8,83 +8,83 @@ body {
   letter-spacing: 1px;
 }
 
-.container {
-    width: 100%;
-}
+.container-1 {
+  width: 100%;
 
-.masonry {
-    padding: 0;
-    column-gap: 15px;
-    column-count: 4;
-}
+  .masonry {
+      padding: 0;
+      column-gap: 15px;
+      column-count: 4;
+  }
 
-.item {
-    display: inline-block;
-    background: #fff;
-    width: 100%;
-    padding-top: 15px;
+  .item {
+      display: inline-block;
+      background: #fff;
+      width: 100%;
+      padding-top: 15px;
 
-    .img-wrapper {
-      border: 1px solid black;
-      padding: 15px;
-      border-radius: 1px;
-      position: relative;
+      .img-wrapper {
+        border: 1px solid black;
+        padding: 15px;
+        border-radius: 1px;
+        position: relative;
 
-      /*
-      .overlay {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        opacity: .5;
-        background-color: black;
-        z-index: 1;
-        cursor: pointer;
-        transition: all .3s linear;
-        left: 0;
-        top: 0;
+        /*
+        .overlay {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          opacity: .5;
+          background-color: black;
+          z-index: 1;
+          cursor: pointer;
+          transition: all .3s linear;
+          left: 0;
+          top: 0;
 
-        &:hover {
-          opacity: 0;
+          &:hover {
+            opacity: 0;
 
-          + img {
+            + img {
+              filter: none;
+            }
+          }
+        }
+        */
+
+        img {
+          vertical-align: top;
+          width: 100%;
+          height: auto;
+          filter: grayscale(100%) contrast(250%);
+          opacity: 1;
+          transition: all .2s linear;
+          cursor: pointer;
+          -webkit-backface-visibility: hidden;
+
+
+          &:hover {
             filter: none;
           }
         }
       }
-      */
-
-      img {
-        vertical-align: top;
-        width: 100%;
-        height: auto;
-        filter: grayscale(100%) contrast(250%);
-        opacity: 1;
-        transition: all .2s linear;
-        cursor: pointer;
-        -webkit-backface-visibility: hidden;
-
-
-        &:hover {
-          filter: none;
-        }
-      }
-    }
-}
-
-.caption {
-  color: black;
-  background-color: white;
-  padding: 15px;
-  border: 1px solid black;
-  margin-top: -1px;
-
-  h2 {
-    font-size: 12px;
-    margin: 0;
   }
 
-  p {
-    margin: 0;
-    font-size: 10px;
+  .caption {
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: -1px;
+
+    h2 {
+      font-size: 12px;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 10px;
+    }
   }
 }
