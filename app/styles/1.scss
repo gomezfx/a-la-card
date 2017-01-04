@@ -13,19 +13,20 @@ body {
 
   .masonry {
       padding: 0;
-      column-gap: 15px;
+      column-gap: 0;
       column-count: 4;
+      width: 1010px;
+      margin: 0 auto;
   }
 
   .item {
       display: inline-block;
       background: #fff;
-      width: 100%;
-      padding-top: 15px;
+      padding-top: 10px;
 
       .img-wrapper {
         border: 1px solid black;
-        padding: 15px;
+        //padding: 15px;
         border-radius: 1px;
         position: relative;
 
@@ -54,9 +55,9 @@ body {
 
         img {
           vertical-align: top;
-          width: 100%;
+          width: 241px;
           height: auto;
-          filter: grayscale(100%) contrast(250%);
+          //filter: grayscale(100%) contrast(250%);
           opacity: 1;
           transition: all .2s linear;
           cursor: pointer;
