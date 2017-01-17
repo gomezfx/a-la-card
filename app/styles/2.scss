@@ -1,71 +1,50 @@
 // bower:scss
 // endbower
 
-body {
+body.b2 {
+  padding: 0 20px;
   margin: 0;
-  padding: 65px 80px;
   font-family: 'Futura';
   letter-spacing: 1px;
 }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 
 .container-2 {
   width: 100%;
 
   .masonry {
       padding: 0;
-      column-gap: 15px;
-      column-count: 4;
+      margin: 0 auto;
   }
 
   .item {
-      display: inline-block;
+      display: block;
       background: #fff;
-      width: 100%;
-      padding-top: 15px;
+      padding-bottom: 10px;
+      break-inside: avoid;
 
       .img-wrapper {
         border: 1px solid black;
-        padding: 15px;
         border-radius: 1px;
         position: relative;
+        padding-bottom: 57.26%;
 
-        /*
-        .overlay {
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          opacity: .5;
-          background-color: black;
-          z-index: 1;
-          cursor: pointer;
-          transition: all .3s linear;
-          left: 0;
-          top: 0;
-
-          &:hover {
-            opacity: 0;
-
-            + img {
-              filter: none;
-            }
-          }
+        &.landscape {
         }
-        */
+
+        &.portrait {
+          padding-bottom: calc(114.52% + 12px);
+        }
 
         img {
-          vertical-align: top;
           width: 100%;
-          height: auto;
-          filter: grayscale(100%) contrast(250%);
-          opacity: 1;
-          transition: all .2s linear;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          right: 0;
           cursor: pointer;
-          -webkit-backface-visibility: hidden;
-
-
-          &:hover {
-            filter: none;
-          }
         }
       }
   }
@@ -87,4 +66,41 @@ body {
       font-size: 10px;
     }
   }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .container-2 {
+
+    .masonry {
+        column-gap: 10px;
+        column-count: 2;
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1205px) {
+  body.b2 {
+    //padding: 65px 80px;
+  }
+
+  .container-2 {
+    width: 100%;
+
+    .masonry {
+        column-gap: 0;
+        column-count: 5;
+        width: 1265px;
+    }
+
+    .item {
+      padding: 5px;
+    }
+  }
+
 }
