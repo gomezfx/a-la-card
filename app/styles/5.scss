@@ -1,0 +1,106 @@
+// bower:scss
+// endbower
+
+body.b5 {
+  padding: 0 20px;
+  margin: 0;
+  font-family: 'Futura';
+  letter-spacing: 1px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.container-5 {
+  width: 100%;
+
+  .masonry {
+      padding: 0;
+      margin: 0 auto;
+  }
+
+  .item {
+      display: block;
+      background: #fff;
+      padding-bottom: 10px;
+      break-inside: avoid;
+
+      .img-wrapper {
+        border: 1px solid black;
+        border-radius: 1px;
+        position: relative;
+        padding-bottom: 57.26%;
+
+        &.landscape {
+        }
+
+        &.portrait {
+          padding-bottom: calc(114.52% + 12px);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          right: 0;
+          cursor: pointer;
+        }
+      }
+  }
+
+  .caption {
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: -1px;
+
+    h2 {
+      font-size: 12px;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 10px;
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .container-5 {
+
+    .masonry {
+        column-gap: 10px;
+        column-count: 2;
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body.b1 {
+    padding: 65px 80px;
+  }
+
+  .container-5 {
+    width: 100%;
+
+    .masonry {
+        column-gap: 0;
+        column-count: 4;
+        width: 1010px;
+    }
+
+    .item {
+      padding: 2px;
+    }
+  }
+
+}
