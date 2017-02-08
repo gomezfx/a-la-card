@@ -28,8 +28,6 @@ body.b7 {
       break-inside: avoid;
 
       .img-wrapper {
-box-shadow: 8px 6px 0px 8px rgba(0,0,0,1);
-        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         //border: 1px solid black;
         position: relative;
         padding-bottom: 57.26%;
@@ -38,11 +36,10 @@ box-shadow: 8px 6px 0px 8px rgba(0,0,0,1);
         }
 
         &.portrait {
-          padding-bottom: calc(114.52% + 20px);
+          padding-bottom: calc(114.52% + 46px);
         }
 
         &:hover {
-box-shadow: 10px 8px 0px 8px rgba(0,0,0,1);
         }
 
         img {
@@ -100,13 +97,31 @@ box-shadow: 10px 8px 0px 8px rgba(0,0,0,1);
     width: 100%;
 
     .masonry {
-        column-gap: 10px;
+        column-gap: 0;
         column-count: 4;
         width: 1265px;
     }
 
     .item {
-      padding: 10px;
+      //margin: 10px;
+      //padding: 20px;
+      padding: 20px;
+
+
+      .img-wrapper {
+        border:2px solid black;
+        box-shadow: 14px 14px 0px 2px rgba(0,0,0,1);
+        border-color: black;
+        transition: all .5s linear;
+      }
+
+      &:hover {
+
+        .img-wrapper {
+          //box-shadow: none;
+
+        }
+      }
     }
   }
 
