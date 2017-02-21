@@ -92,6 +92,7 @@ body.b6 {
         }
       }
 
+      &:nth-child(11):hover,
       &:nth-child(3):hover {
         .overlay {
           opacity: .9;
