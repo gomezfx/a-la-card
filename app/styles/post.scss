@@ -1,0 +1,43 @@
+.body-page {
+  margin: 0;
+  padding: 0;
+
+  .hero {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-color: #dfdfdf;
+
+    .text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+
+      h1,h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        color: white;
+        letter-spacing: 5px;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 940px;
+    padding-top: 160px;
+  }
+
+  p {
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+}
