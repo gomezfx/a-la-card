@@ -14,6 +14,9 @@ html.splash-page {
     background-color: white;
     overflow: hidden;
     text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
     .logo {
       height: auto;
